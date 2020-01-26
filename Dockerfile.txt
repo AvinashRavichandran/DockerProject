@@ -1,0 +1,7 @@
+FROM nginx
+
+COPY wrapper.sh /
+
+COPY index.html /var/www/html/
+
+CMD ["./wrapper.sh"]
